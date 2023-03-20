@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
 import Header from './components/Header'
 import Main from './components/Main'
+import Counter from './components/Counter'
 
 function App(){
   const [page, setPage] = useState("Home")
@@ -17,6 +17,8 @@ function App(){
     <div className="App">
       <Header pageHandler={pageHandler} page={page}/>
       <Main page={page}/>
+      <Counter />
+
     </div>
   )
 }
